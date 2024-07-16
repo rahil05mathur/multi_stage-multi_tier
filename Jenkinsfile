@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('frontend') {
       agent {
-        docker ( image 'maven:3.9.8-eclipse-temurin-11' )
+        docker ( image 'maven:latest' )
       }
       steps {
         sh 'mvn --version'
